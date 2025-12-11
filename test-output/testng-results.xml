@@ -1,25 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-10T12:49:58 IST" name="Default suite" finished-at="2025-12-10T12:50:04 IST" duration-ms="5791">
+  <suite started-at="2025-12-11T11:26:25 IST" name="Suite" finished-at="2025-12-11T11:26:32 IST" duration-ms="6306">
     <groups>
     </groups>
-    <test started-at="2025-12-10T12:49:58 IST" name="Default test" finished-at="2025-12-10T12:50:04 IST" duration-ms="5791">
+    <test started-at="2025-12-11T11:26:25 IST" name="Test" finished-at="2025-12-11T11:26:32 IST" duration-ms="6306">
       <class name="testCases.TC001_AccRegTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC001_AccRegTest@222545dc]" started-at="2025-12-10T12:49:58 IST" name="setup" finished-at="2025-12-10T12:50:02 IST" duration-ms="3987" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC001_AccRegTest@38c6f217]" started-at="2025-12-11T11:26:25 IST" name="setup" finished-at="2025-12-11T11:26:30 IST" duration-ms="4475" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[macOS]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyAccReg()[pri:0, instance:testCases.TC001_AccRegTest@222545dc]" started-at="2025-12-10T12:50:02 IST" name="verifyAccReg" finished-at="2025-12-10T12:50:04 IST" duration-ms="1704" status="PASS">
+        <test-method signature="verifyAccReg()[pri:0, instance:testCases.TC001_AccRegTest@38c6f217]" started-at="2025-12-11T11:26:30 IST" name="verifyAccReg" finished-at="2025-12-11T11:26:32 IST" duration-ms="1730" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<stale element reference: stale element not found
+  (Session info: chrome=142.0.7444.177)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.1', java.version: '24.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [67fa2c17cd66409bab0e2c15511ce05a, getElementText {id=f.B8326FA65E185CF7A931878841F9E354.d.4AFC70B367463BE24026757A8DD3EB19.e.55}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.177, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: /var/folders/63/8vwftkn165d...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53972}, goog:processID: 3041, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:53972/devtoo..., se:cdpVersion: 142.0.7444.177, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (67fa2c17cd66409bab0e2c15511ce05a)] -> xpath: //div[@id='rightPanel']//p]
+Session ID: 67fa2c17cd66409bab0e2c15511ce05a> but was:<Your account was created successfully. You are now logged in.>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<stale element reference: stale element not found
+  (Session info: chrome=142.0.7444.177)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.1', java.version: '24.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [67fa2c17cd66409bab0e2c15511ce05a, getElementText {id=f.B8326FA65E185CF7A931878841F9E354.d.4AFC70B367463BE24026757A8DD3EB19.e.55}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.177, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: /var/folders/63/8vwftkn165d...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53972}, goog:processID: 3041, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:53972/devtoo..., se:cdpVersion: 142.0.7444.177, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (67fa2c17cd66409bab0e2c15511ce05a)] -> xpath: //div[@id='rightPanel']//p]
+Session ID: 67fa2c17cd66409bab0e2c15511ce05a> but was:<Your account was created successfully. You are now logged in.>
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:115)
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:125)
+at testCases.TC001_AccRegTest.verifyAccReg(TC001_AccRegTest.java:48)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAccReg -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC001_AccRegTest@222545dc]" started-at="2025-12-10T12:50:04 IST" name="tearDown" finished-at="2025-12-10T12:50:04 IST" duration-ms="87" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC001_AccRegTest@38c6f217]" started-at="2025-12-11T11:26:32 IST" name="tearDown" finished-at="2025-12-11T11:26:32 IST" duration-ms="89" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testCases.TC001_AccRegTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
