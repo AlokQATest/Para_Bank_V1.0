@@ -5,13 +5,13 @@
   <parameter name="browser" value="chrome"/>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testCases.TC001_AccRegTest">
+      <class name="testCases.TC002_LoginDDT">
         <methods>
+          <include name="TestLogin" invocation-numbers="0 3 5"/>
           <include name="tearDown"/>
           <include name="setup"/>
-          <include name="verifyAccReg"/>
         </methods>
-      </class> <!-- testCases.TC001_AccRegTest -->
+      </class> <!-- testCases.TC002_LoginDDT -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

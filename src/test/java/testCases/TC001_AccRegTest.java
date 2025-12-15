@@ -45,7 +45,7 @@ public class TC001_AccRegTest extends BaseClass{
 		String confirmMsg = arp.getConfirMsg();
 		logger.info("Verifying successfull account creation");
 		// Validating success message
-		AssertJUnit.assertEquals(confirmMsg, "Your account was created successfully. You are now logged in.");
+		Assert.assertEquals(confirmMsg, "Your account was created successfully. You are now logged in.");
 		
 	}
 	

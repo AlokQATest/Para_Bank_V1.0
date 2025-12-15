@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">8 methods, 3 failed,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,10 +103,54 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCases.TC001_AccRegTest" class="method navigator-link" hash-for-method="verifyAccReg">verifyAccReg</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC002_LoginDDT" class="method navigator-link" hash-for-method="TestLogin(Test999, 123456789, Valid)">TestLogin(Test999, 123456789, Valid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC002_LoginDDT" class="method navigator-link" hash-for-method="TestLogin(rtyu@gmail.com, 564756456, Valid)">TestLogin(rtyu@gmail.com, 564756456, Valid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC002_LoginDDT" class="method navigator-link" hash-for-method="TestLogin(rock123@gmail.com, 987654321, Valid)">TestLogin(rock123@gmail.com, 987654321, Valid)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC002_LoginDDT" class="method navigator-link" hash-for-method="TestLogin(qwret@gmail.com, abcd1234, Invalid)">TestLogin(qwret@gmail.com, abcd1234, Invalid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC002_LoginDDT" class="method navigator-link" hash-for-method="TestLogin(, 34545tttt, Invalid)">TestLogin(, 34545tttt, Invalid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC002_LoginDDT" class="method navigator-link" hash-for-method="TestLogin(abcdf@gmail.com, 7654321, Invalid)">TestLogin(abcdf@gmail.com, 7654321, Invalid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC002_LoginDDT" class="method navigator-link" hash-for-method="TestLogin(123@gmail.com, 5432123, Invalid)">TestLogin(123@gmail.com, 5432123, Invalid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC002_LoginDDT" class="method navigator-link" hash-for-method="TestLogin(rahul1234, , Invalid)">TestLogin(rahul1234, , Invalid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -121,32 +165,98 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">testCases.TC001_AccRegTest</span>
+              <span class="class-name">testCases.TC002_LoginDDT</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyAccReg">
-                  </a> <!-- verifyAccReg -->
-                  <span class="method-name">verifyAccReg</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected:&lt;stale element reference: stale element not found
-  (Session info: chrome=142.0.7444.177)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
-Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.1&apos;, java.version: &apos;24.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [67fa2c17cd66409bab0e2c15511ce05a, getElementText {id=f.B8326FA65E185CF7A931878841F9E354.d.4AFC70B367463BE24026757A8DD3EB19.e.55}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.177, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: /var/folders/63/8vwftkn165d...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53972}, goog:processID: 3041, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:53972/devtoo..., se:cdpVersion: 142.0.7444.177, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on mac (67fa2c17cd66409bab0e2c15511ce05a)] -&gt; xpath: //div[@id=&apos;rightPanel&apos;]//p]
-Session ID: 67fa2c17cd66409bab0e2c15511ce05a&gt; but was:&lt;Your account was created successfully. You are now logged in.&gt;
-	at testCases.TC001_AccRegTest.verifyAccReg(TC001_AccRegTest.java:48)
+                  <a name="TestLogin(Test999, 123456789, Valid)">
+                  </a> <!-- TestLogin(Test999, 123456789, Valid) -->
+                  <span class="method-name">TestLogin</span>
+                  <span class="parameters">(Test999,123456789,Valid)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at testCases.TC002_LoginDDT.TestLogin(TC002_LoginDDT.java:31)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-... Removed 27 stack frames
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestLogin(rtyu@gmail.com, 564756456, Valid)">
+                  </a> <!-- TestLogin(rtyu@gmail.com, 564756456, Valid) -->
+                  <span class="method-name">TestLogin</span>
+                  <span class="parameters">(rtyu@gmail.com,564756456,Valid)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at testCases.TC002_LoginDDT.TestLogin(TC002_LoginDDT.java:31)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestLogin(rock123@gmail.com, 987654321, Valid)">
+                  </a> <!-- TestLogin(rock123@gmail.com, 987654321, Valid) -->
+                  <span class="method-name">TestLogin</span>
+                  <span class="parameters">(rock123@gmail.com,987654321,Valid)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at testCases.TC002_LoginDDT.TestLogin(TC002_LoginDDT.java:31)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 29 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC002_LoginDDT</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestLogin(qwret@gmail.com, abcd1234, Invalid)">
+                  </a> <!-- TestLogin(qwret@gmail.com, abcd1234, Invalid) -->
+                  <span class="method-name">TestLogin</span>
+                  <span class="parameters">(qwret@gmail.com,abcd1234,Invalid)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestLogin(, 34545tttt, Invalid)">
+                  </a> <!-- TestLogin(, 34545tttt, Invalid) -->
+                  <span class="method-name">TestLogin</span>
+                  <span class="parameters">(,34545tttt,Invalid)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestLogin(abcdf@gmail.com, 7654321, Invalid)">
+                  </a> <!-- TestLogin(abcdf@gmail.com, 7654321, Invalid) -->
+                  <span class="method-name">TestLogin</span>
+                  <span class="parameters">(abcdf@gmail.com,7654321,Invalid)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestLogin(123@gmail.com, 5432123, Invalid)">
+                  </a> <!-- TestLogin(123@gmail.com, 5432123, Invalid) -->
+                  <span class="method-name">TestLogin</span>
+                  <span class="parameters">(123@gmail.com,5432123,Invalid)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestLogin(rahul1234, , Invalid)">
+                  </a> <!-- TestLogin(rahul1234, , Invalid) -->
+                  <span class="method-name">TestLogin</span>
+                  <span class="parameters">(rahul1234,,Invalid)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -161,7 +271,7 @@ Session ID: 67fa2c17cd66409bab0e2c15511ce05a&gt; but was:&lt;Your account was cr
   &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testCases.TC001_AccRegTest&quot;/&gt;
+      &lt;class name=&quot;testCases.TC002_LoginDDT&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -201,16 +311,44 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyAccReg')
-data.setCell(0, 2, 'testCases.TC001_AccRegTest')
-data.setCell(0, 3, 1730);
+data.setCell(0, 1, 'TestLogin')
+data.setCell(0, 2, 'testCases.TC002_LoginDDT')
+data.setCell(0, 3, 21162);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'TestLogin')
+data.setCell(1, 2, 'testCases.TC002_LoginDDT')
+data.setCell(1, 3, 20644);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TestLogin')
+data.setCell(2, 2, 'testCases.TC002_LoginDDT')
+data.setCell(2, 3, 20100);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'TestLogin')
+data.setCell(3, 2, 'testCases.TC002_LoginDDT')
+data.setCell(3, 3, 20093);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'TestLogin')
+data.setCell(4, 2, 'testCases.TC002_LoginDDT')
+data.setCell(4, 3, 20093);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'TestLogin')
+data.setCell(5, 2, 'testCases.TC002_LoginDDT')
+data.setCell(5, 3, 15175);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'TestLogin')
+data.setCell(6, 2, 'testCases.TC002_LoginDDT')
+data.setCell(6, 3, 15143);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'TestLogin')
+data.setCell(7, 2, 'testCases.TC002_LoginDDT')
+data.setCell(7, 3, 15112);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -236,7 +374,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testCases.TC001_AccRegTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testCases.TC002_LoginDDT</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(macOS, chrome)</span>
                 <span class="method-start">0 ms</span>
@@ -244,12 +382,44 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">verifyAccReg</span>
-                <span class="method-start">4477 ms</span>
+                <span class="method-name">TestLogin(Test999, 123456789, Valid)</span>
+                <span class="method-start">6015 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestLogin(123@gmail.com, 5432123, Invalid)</span>
+                <span class="method-start">21192 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestLogin(abcdf@gmail.com, 7654321, Invalid)</span>
+                <span class="method-start">41296 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TestLogin(rock123@gmail.com, 987654321, Valid)</span>
+                <span class="method-start">62462 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestLogin(qwret@gmail.com, abcd1234, Invalid)</span>
+                <span class="method-start">77607 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TestLogin(rtyu@gmail.com, 564756456, Valid)</span>
+                <span class="method-start">97704 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestLogin(, 34545tttt, Invalid)</span>
+                <span class="method-start">112818 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestLogin(rahul1234, , Invalid)</span>
+                <span class="method-start">132914 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">6209 ms</span>
+                <span class="method-start">153562 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
